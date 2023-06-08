@@ -11,23 +11,23 @@
 
 - 👯 I’m looking to collaborate on **Reacjs & TailwindCSS & Nodejs Projects**
 
-- 👨‍💻 All of my projects are available at [https://mobinkaram.ir/portfolio](https://mobinkaram.ir/portfolio)
+- 👨‍💻 All of my projects are available at [Portfolio](https://mobinkaram.ir/portfolio)
 
-- 📝 I regularly write articles on :: [https://mobinkaram.ir/article](Article)
+- 📝 I regularly write articles on :: [Article](https://mobinkaram.ir/article)
 
 - 💬 Ask me about **JavaScript Programming & about my self**
 
 - 📫 How to reach me **Mohammadmobinkaram@gmail.com**
 
-- 📄 MyResume in Persian Lang : [https://mobinkaram.ir/download/mobinkaram-resume](Resume)
+- 📄 MyResume in Persian Lang : [Resume](https://mobinkaram.ir/download/mobinkaram-resume.pdf)
 
 - ⚡ Fun fact **I think Git is Nothing 💢 **
 
 ## How Connect with Me ::
 
-### ::: [https://www.instagram.com/mobin\_\_karam"](Instagram)
+### ::: [Instagram](https://instagram.com/mobin__karam)
 
-### ::: [https://linkedin.com/in/mobin-karam-a54114242](Linkedin)
+### ::: [Linkedin](https://linkedin.com/in/mobin-karam-a54114242)
 
 ### <h3 align="left">Connect with me:</h3>
 
