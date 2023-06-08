@@ -64,7 +64,7 @@ const Footer = () => {
                   <p className="mr-10px ml-10px">Following</p>
                   <span className=""> {user.following}</span>
                 </div>
-                <div className="flex items-center  justify-start flex-row flex-nowrap mt-10px hover:bg-slate-700 p-10px rounded-lg">
+                <div className="flex items-center  justify-start flex-row flex-nowrap mt-10px bg-slate-700 p-10px rounded-lg">
                   <p className="">PublicRepositories</p>
                   <RiGitRepositoryLine className="ml-10px mr-10px" />
                   <span className="">{user.public_repos}</span>

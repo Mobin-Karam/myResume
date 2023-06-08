@@ -20,8 +20,8 @@ const Navbar = () => {
           <Link className="Items Link" to={"/"}>
             <span className="item">Home</span>
           </Link>
-          <Link to={"/work"}>
-            <option value="work">Work</option>
+          <Link to={"/article"}>
+            <option value="article">Article</option>
           </Link>
           <Link className="Items Link" to={"/about"}>
             <span className="item">About</span>
@@ -32,9 +32,12 @@ const Navbar = () => {
           <Link className="Items Link" to={"/services"}>
             <span className="item">Services</span>
           </Link>
+          <Link className="Items Link">
+            <button className="">Let's chat</button>
+          </Link>
         </div>
-        <Link className="Link">
-          <button className="Btn">Let's chat</button>
+        <Link to={"https://www.buymeacoffee.com/mohammadmk"} target="_blank">
+          <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=mohammadmk&button_colour=5F7FFF&font_colour=ffffff&font_family=Lato&outline_colour=000000&coffee_colour=FFDD00" />
         </Link>
       </nav>
     </>

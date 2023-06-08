@@ -14,10 +14,11 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Dashboard from "./pages/Dashboard";
 import Projects from "./pages/Projects";
-import Work from "./pages/Work";
 import About from "./pages/About";
 import Services from "./pages/Services";
+import Article from "./pages/Article";
 import "./dist/main.css";
+import Projectdemo from "./pages/Projectdemo";
 
 const Layout = () => {
   return (
@@ -39,8 +40,8 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/work",
-        element: <Work />,
+        path: "/article",
+        element: <Article />,
       },
       {
         path: "/about",
@@ -49,6 +50,14 @@ const router = createBrowserRouter([
       {
         path: "/services",
         element: <Services />,
+      },
+      {
+        path: "/projects",
+        element: <Projects />,
+      },
+      {
+        path: "/projects/projectdemo",
+        element: <Projectdemo />,
       },
     ],
   },
@@ -59,10 +68,6 @@ const router = createBrowserRouter([
   {
     path: "/dashboard",
     element: <Dashboard />,
-  },
-  {
-    path: "/projects",
-    element: <Projects />,
   },
 ]);
 
