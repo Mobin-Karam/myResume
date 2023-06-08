@@ -19,7 +19,7 @@
 
 - 📫 How to reach me **Mohammadmobinkaram@gmail.com**
 
-- 📄 MyResume in Persian Lang : [https://mobinkaram.ir/download/mobinkaram-resume](Resume)
+- 📄 MyResume in Persian Lang : [Resume](https://mobinkaram.ir/download/mobinkaram-resume)
 
 - ⚡ Fun fact **I think Git is Nothing 💢 **
 
