@@ -1,0 +1,704 @@
+<html lang="en"> 
+
+<head>
+    <!-- meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MobinKaram - Personal Portfolio</title>
+
+    <!-- -----Script .js ----- -->
+    <!-- <script src="./js/react.rb.js"></script>
+    <script src="./js/content.js"></script>
+    <script src="./js/polyfill.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/composer.perloader.js"></script>
+    <script src="./js/index.bundel.js"></script> -->
+
+
+    <!-- tab img -->
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+
+    <!-- css plugin -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/magnific-popup.css">
+    <link rel="stylesheet" href="./css/flexslider.css">
+    <link rel="stylesheet" href="./css/aos.css">
+
+
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style-responsives.css">
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Hind:600|Lato:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+        @font-face {
+            font-family: 'rbicon';
+            src: url(chrome-extension://dipiagiiohfljcicegpgffpbnjmgjcnf/fonts/rbicon.woff2) format("woff2");
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body data-aos-easing="ease" data-aos-duration="1200" data-aos-delay="0">
+    <div style="position:fixed;top:0px;left:0px;width:0;height:0;" id="scrollzipPoint"></div>
+
+    <!-- // PRELOADER BEGIN -->
+    <div id="preloader" style="display: none;">
+        <div id="status" style="display: none;">
+            <div class="loader-revolve center">
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- // PRELOADER END -->
+
+    <!-- // NAVIGATION BEGIN -->
+    <div id="navigation">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="logo">
+                        <a href="index-1.html">MobinKaram.</a>
+                    </div>
+                </div>
+
+                <div class="col-sm-9">
+                    <div class="navigation-menu">
+                        <div class="navbar">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                    data-target=".navbar-collapse">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+
+                            <div class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li><a class="active smoth-scroll" href="#home">Home</a></li>
+                                    <li class="active"><a class="smoth-scroll" href="#about">About</a></li>
+                                    <li><a class="smoth-scroll" href="#portfolio">Portfolio</a></li>
+                                    <li><a class="smoth-scroll" href="#testimonial">Testimoial</a></li>
+                                    <li><a class="smoth-scroll" href="#services">Services</a></li>
+                                    <li><a class="smoth-scroll" href="#blog">Blog</a></li>
+                                    <li><a class="smoth-scroll" href="#contact">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // NAVIGATION END -->
+
+    <!-- // HOME BEGIN -->
+    <div id="home" class="home-bg"
+        style="background-image: url(&quot;./img/bg.jpg&quot;); background-position: 0px 0px;"
+        data-stellar-background-ratio="0.6">
+        <div class="overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="home-text">
+                        <div class="profile-pic aos-init aos-animate" data-aos="fade-zoom-in"
+                            data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+                            <img src="./img/me.jpg">
+                        </div>
+
+                        <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300"
+                            data-aos-offset="0" class="aos-init">
+                            <h1>Hi, I'm Mobin Karam
+                            </h1>
+                            <h3 id="text-rotator">
+                                <div style="display: none;">Web Designer</div>
+                                <!-- <div style="display: none;">UI Designer</div> -->
+                                <div style="display: block;">Front-End Developer</div>
+                            </h3>
+                        </div>
+                    </div>
+                    <a class="smoth-scroll" href="#about"><i class="fa fa-angle-down arrow"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // HOME END -->
+
+    <!-- // ABOUT BEGIN -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="description col-md-6 col-sm-4 col-xs-12">
+                    <h2>Hello, I am James</h2>
+                    <h4>Web Developer from Ireland</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh felis, rutrum id eleifend
+                        nec, viverra ac
+                        nunc.
+                        Fusce sit amet interdum metus, a interdum massa. Nullam gravida, elit sed mattis semper, libero
+                        leo convallis mi,
+                        et
+                        elementum magna tortor sed tortor. Aliquam hendrerit metus non enim fringilla, eu molestie ante
+                        bibendum.
+                    </p>
+
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                    </ul>
+
+                    <p>
+                        <a href="#" class="btn btn-dark with-arrow smoth-scroll">My Resume
+                            <i class="fa fa-download"></i>
+                        </a>
+                    </p>
+                </div>
+
+                <div class="facts col-md-5 col-sm-5 col-xs-12">
+                    <div class="row">
+
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                            <div class="count-item">
+                                <div class="numscroller roller-title-number-1 scrollzip" data-slno="1" data-min="0"
+                                    data-max="300" data-delay="10" data-increment="5">300</div>
+                                <div class="count-name-intro">Project done</div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                            <div class="count-item">
+                                <div class="numscroller roller-title-number-2 scrollzip" data-slno="2" data-min="0"
+                                    data-max="500" data-delay="10" data-increment="5">500</div>
+                                <div class="count-name-intro">Cups of coffe</div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                            <div class="count-item">
+                                <div class="numscroller roller-title-number-3 scrollzip" data-slno="3" data-min="0"
+                                    data-max="120" data-delay="10" data-increment="5">120</div>
+                                <div class="count-name-intro">Clients</div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                            <div class="count-item">
+                                <div class="numscroller roller-title-number-4 scrollzip" data-slno="4" data-min="0"
+                                    data-max="10" data-delay="1" data-increment="1">10</div>
+                                <div class="count-name-intro">Awards</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- // ABOUT END -->
+
+    <!-- // SKILLS BEGIN -->
+    <section id="skills">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2>My Skills</h2>
+                </div>
+
+                <div class="col-md-5 col-sm-6 col-xs-12">
+                    <div class="progress-box">
+                        <p>PHP
+                            <span class="color-heading pull-right">87%</span>
+                        </p>
+                        <div class="progress">
+                            <div class="progress-bar bg-color-base" role="progressbar" data-width="87"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-5 col-sm-6 col-xs-12 skills-right">
+                    <div class="progress-box">
+                        <p>HTML5
+                            <span class="color-heading pull-right">96%</span>
+                        </p>
+                        <div class="progress">
+                            <div class="progress-bar bg-color-base" role="progressbar" data-width="96"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-5 col-sm-6 col-xs-12">
+                    <div class="progress-box">
+                        <p>JavaSript
+                            <span class="color-heading pull-right">52%</span>
+                        </p>
+                        <div class="progress">
+                            <div class="progress-bar bg-color-base" role="progressbar" data-width="52"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-5 col-sm-6 col-xs-12 skills-right">
+                    <div class="progress-box">
+                        <p>Photoshop
+                            <span class="color-heading pull-right">77%</span>
+                        </p>
+                        <div class="progress">
+                            <div class="progress-bar bg-color-base" role="progressbar" data-width="77"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- // SKILLS END -->
+
+    <!--  PORTFOLIO BEGIN -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div data-aos="fade-up" class="aos-init">
+                    <div class="col-md-12 text-center">
+                        <h2>Selected Project</h2>
+                    </div>
+
+                    <div class="col-md-12 col-sm-12">
+                        <div class="filter-btn col-md-12 text-center">
+                            <div class="filter active" data-filter="all">All</div>
+                            <div class="filter" data-filter=".website">Website</div>
+                            <div class="filter" data-filter=".photography">Photography</div>
+                            <div class="filter lst-cld" data-filter=".design">Design</div>
+                        </div>
+
+                        <div id="port-image" class="container">
+                            <div class="row">
+
+                                <div class="website grid mix col-md-4 col-sm-6 col-xs-12"
+                                    style="display: inline-block;">
+                                    <a href="./img/portfolio-1.jpg" class="image-popup">
+                                        <figure class="port-desc">
+                                            <img src="./img/portfolio-1.jpg" class="img-responsive" alt="Work 1">
+                                            <figcaption>
+                                                <h4>Project One</h4>
+                                                <h5>Website</h5>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+
+                                <div class="website grid mix col-md-4 col-sm-6 col-xs-12"
+                                    style="display: inline-block;">
+                                    <a href="./img/portfolio-2.jpg" class="image-popup">
+                                        <figure class="port-desc">
+                                            <img src="./img/portfolio-2.jpg" class="img-responsive" alt="Work 2">
+                                            <figcaption>
+                                                <h4>Project Two</h4>
+                                                <h5>Website</h5>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+
+                                <div class="photography grid mix col-md-4 col-sm-6 col-xs-12"
+                                    style="display: inline-block;">
+                                    <a href="./img/portfolio-3.jpg" class="image-popup">
+                                        <figure class="port-desc">
+                                            <img src="./img/portfolio-3.jpg" class="img-responsive" alt="Work 3">
+                                            <figcaption>
+                                                <h4>Project Three</h4>
+                                                <h5>Photography</h5>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+
+                                <div class="photography grid mix col-md-4 col-sm-6 col-xs-12"
+                                    style="display: inline-block;">
+                                    <a href="./img/portfolio-4.jpg" class="image-popup">
+                                        <figure class="port-desc">
+                                            <img src="./img/portfolio-4.jpg" class="img-responsive" alt="Work 4">
+                                            <figcaption>
+                                                <h4>Project Four</h4>
+                                                <h5>Photography</h5>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+
+                                <div class="design grid mix col-md-4 col-sm-6 col-xs-12" style="display: inline-block;">
+                                    <a href="./img/portfolio-5.jpg" class="image-popup">
+                                        <figure class="port-desc">
+                                            <img src="./img/portfolio-5.jpg" class="img-responsive" alt="Work 5">
+                                            <figcaption>
+                                                <h4>Project Five</h4>
+                                                <h5>Design</h5>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+
+                                <div class="design grid mix col-md-4 col-sm-6 col-xs-12" style="display: inline-block;">
+                                    <a href="./img/portfolio-6.jpg" class="image-popup">
+                                        <figure class="port-desc">
+                                            <img src="./img/portfolio-6.jpg" class="img-responsive" alt="Work 6">
+                                            <figcaption>
+                                                <h4>Project Six</h4>
+                                                <h5>Design</h5>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- // PORTFOLIO END -->
+
+    <!-- // SERVICES BEGIN -->
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Services</h2>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="row">
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="services-item">
+                                <i class="fa fa-cubes fa-2x"></i>
+                                <h4>Web Design</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh felis, rutrum id
+                                    eleifend nec, viverra
+                                    ac nunc.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="services-item">
+                                <i class="fa fa-flask fa-2x"></i>
+                                <h4>UI</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh felis, rutrum id
+                                    eleifend nec, viverra
+                                    ac nunc.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="services-item">
+                                <i class="fa fa-heart fa-2x"></i>
+                                <h4>Front End</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh felis, rutrum id
+                                    eleifend nec, viverra
+                                    ac nunc.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="services-item">
+                                <i class="fa fa-diamond fa-2x"></i>
+                                <h4>UX Design</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh felis, rutrum id
+                                    eleifend nec, viverra
+                                    ac nunc.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="services-item">
+                                <i class="fa fa-wordpress fa-2x"></i>
+                                <h4>Wordpress</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh felis, rutrum id
+                                    eleifend nec, viverra
+                                    ac nunc.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="services-item">
+                                <i class="fa fa-bolt fa-2x"></i>
+                                <h4>SEO</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh felis, rutrum id
+                                    eleifend nec, viverra
+                                    ac nunc.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- // SERVICES END -->
+
+    <!-- // HIRE BEGIN -->
+    <section id="hire">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-sm-6 col-xs-12">
+                    <h2>Hire Me</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh felis, rutrum id eleifend
+                        nec, viverra ac
+                        nunc. Fusce
+                        sit amet interdum metus, a interdum massa.
+                    </p>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <p>
+                        <a href="#contact" class="btn btn-dark btn-lg smoth-scroll">Get in Touch</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- // HIRE END -->
+
+    <!-- // TESTIMONIAL BEGIN -->
+    <section id="testimonial" class="testimonial-slider text-center" style="background-image: url('./img/bg.jpg');">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="flexslider">
+                        <ul class="slides">
+
+                            <li class=""
+                                style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;">
+                                <p class="author">John Pagiyai SH, Product Designer.</p>
+                                <h2>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis ipsum et ante
+                                    tempor imperdiet. Sed
+                                    eleifend metus
+                                    et nisl scelerisque, ut convallis sapien facilisis."
+                                </h2>
+                            </li>
+
+                            <li style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;"
+                                class="">
+                                <p class="author">Yong Lek, Founder Abidas.</p>
+                                <h2>"Morbi et vulputate orci. Nullam in venenatis risus. Aliquam nec orci elit. Sed
+                                    dapibus eleifend enim, sed
+                                    imperdiet
+                                    lacus eleifend quis. Nullam mollis, quam ac convallis semper."
+                                </h2>
+
+                            </li>
+
+                            <li style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; display: block; z-index: 2;"
+                                class="flex-active-slide">
+                                <p class="author">Bung Fefe, Actor</p>
+                                <h2>"Cras blandit rutrum justo tincidunt iaculis. Ut purus sem, facilisis eget urna
+                                    quis, commodo tempus
+                                    ligula. Morbi
+                                    sagittis, erat sed imperdiet mattis, libero libero sodales."
+                                </h2>
+                            </li>
+
+                        </ul>
+                        <!-- <ol class="flex-control-nav flex-control-paging">
+                            <li><a class="">1</a></li>
+                            <li><a class="">2</a></li>
+                            <li><a class="flex-active">3</a></li>
+                        </ol> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- // TESTIMONIAL END -->
+
+    <!-- // BLOG BEGIN -->
+    <section id="blog">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2>Blog Post</h2>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="blog-item">
+                        <a href="single.html" class="blog-img">
+                            <img src="./img/blog-1.jpg">
+                        </a>
+                        <div class="blog-desc">
+                            <h4>
+                                <a href="single.html">Lorem ipsum dolor sit amet</a>
+                            </h4>
+                            <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                                himenaeos.</p>
+                            <a href="single.html" class="btn btn-dark">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="blog-item">
+                        <a href="single.html" class="blog-img">
+                            <img src="./img/blog-2.jpg">
+                        </a>
+                        <div class="blog-desc">
+                            <h4>
+                                <a href="single.html">Lorem ipsum dolor sit amet</a>
+                            </h4>
+                            <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                                himenaeos.</p>
+                            <a href="single.html" class="btn btn-dark">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="blog-item">
+                        <a href="single.html" class="blog-img">
+                            <img src="./img/blog-3.jpg">
+                        </a>
+                        <div class="blog-desc">
+                            <h4>
+                                <a href="single.html">Lorem ipsum dolor sit amet</a>
+                            </h4>
+                            <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                                himenaeos.</p>
+                            <a href="single.html" class="btn btn-dark">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- // BLOG END -->
+
+    <!-- // CONTACT BEGIN -->
+    <section id="contact">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2>Contact Me</h2>
+                </div>
+
+                <div class="address-icons col-md-8 col-md-offset-2">
+                    <div class="col-md-4 col-sm-4">
+                        <i class="fa fa-envelope fa-2x"></i>
+                        <p>dew@email.com</p>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4">
+                        <i class="fa fa-map-marker fa-2x"></i>
+                        <p>Banguntapan,
+                            <br> Yogyakarta, ID 55198
+                        </p>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4">
+                        <i class="fa fa-phone fa-2x"></i>
+                        <p>+62 123 456 7890</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="col-md-8 col-md-offset-2">
+                    <form id="contact-form" name="contact" method="post" novalidate="novalidate">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                                <div class="form-group">
+                                    <input type="text" name="name" id="name" class="form-control" placeholder="Name"
+                                        required="">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="form-group">
+                                    <input type="email" name="email" id="email" class="form-control" placeholder="Email"
+                                        required="">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message..."
+                                required=""></textarea>
+                            <p class="help-block text-danger"></p>
+                        </div>
+
+                        <div class="col-md-12 col-xs-12">
+                            <button id="submit" type="submit" name="submit" class="btn btn-dark">Send Message</button>
+                        </div>
+
+                        <div id="success" class="col-md-12 col-xs-12">
+                            <p class="green textcenter">Your message was send, Thank you.</p>
+                        </div>
+
+                        <div id="error" class="col-md-12 col-xs-12">
+                            <p>Something maybe wrong please try again</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- // CONTACT END-->
+
+    <!-- // FOOTER BEGIN -->
+    <footer id="footer">
+        <div class="container">
+            <div class="col-md-12 text-center">
+                <ul class="social-icons-footer">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                </ul>
+
+                <p>© 2019 Dew. made by vavelo</p>
+            </div>
+        </div>
+    </footer>
+    <!-- // FOOTER END -->
+
+    <!-- js plugin -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery.stellar.min.js"></script>
+    <script src="./js/text-rotate.js"></script>
+    <script src="./js/numscroller.js"></script>
+    <script src="./js/jquery.appear.js"></script>
+    <script src="./js/progress-bar.min.js"></script>
+    <script src="./js/jquery.mixitup.js"></script>
+    <script src="./js/jquery.magnific-popup.min.js"></script>
+    <script src="./js/magnific-popup-options.js"></script>
+    <script src="./js/jquery.flexslider-min.js"></script>
+    <script src="./js/aos.js"></script>
+    <script src="./js/jquery.form.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+
+
+    <!-- main js -->
+    <script src="./js/main.js"></script>
+
+
+    <!-- <div id="rememberry__extension__root" style="all: unset;"></div> -->
+    <div id="rememberry__extension__root" style="all: unset;"></div>
+</body>
+
+</html>
