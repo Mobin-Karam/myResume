@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-mobin {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #969393;
+}
+
+.container-mobin .inner {
+    position: relative;
+    width: calc(100% - 200px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    padding: 50px 20px 50px 20px;
+}
+
+.container-mobin .inner .box {
+    margin: 10px;
+    position: relative;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.container-mobin .inner .box .imgbox1::after {
+    content: 'NewYork';
+    position: absolute;
+    display: none;
+    color: #fff;
+    top: 354px;
+    left: 42px;
+}
+
+.container-mobin .inner .box .imgbox2::after {
+    content: 'Tehran';
+    position: absolute;
+    display: none;
+    color: #fff;
+    top: 354px;
+    left: 42px;
+}
+
+.container-mobin .inner .box .imgbox3::after {
+    content: 'London';
+    position: absolute;
+    display: none;
+    color: #fff;
+    top: 354px;
+    left: 42px;
+}
+
+.container-mobin .inner .box .imgbox4::after {
+    content: 'Mashhad';
+    position: absolute;
+    display: none;
+    color: #fff;
+    top: 354px;
+    left: 42px;
+}
+
+.container-mobin .inner .box .imgbox5::after {
+    content: 'Nowdeshah';
+    position: absolute;
+    display: none;
+    color: #fff;
+    top: 354px;
+    left: 42px;
+}
+
+.container-mobin .inner .box .imgbox {
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    cursor: pointer;
+}
+
+.container-mobin .inner .box .imgbox1 {
+    width: 70px;
+    height: 400px;
+    background-image: url(./img/img01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .5;
+    z-index: 999;
+}
+
+.container-mobin .inner .box .imgbox2 {
+    width: 70px;
+    height: 400px;
+    background-image: url(./img/img02.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .5;
+    z-index: 999;
+}
+
+.container-mobin .inner .box .imgbox3 {
+    width: 70px;
+    height: 400px;
+    background-image: url(./img/img03.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .5;
+    z-index: 999;
+}
+
+.container-mobin .inner .box .imgbox4 {
+    width: 70px;
+    height: 400px;
+    background-image: url(./img/img04.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .5;
+    z-index: 999;
+}
+
+.container-mobin .inner .box .imgbox5 {
+    width: 70px;
+    height: 400px;
+    background-image: url(./img/img05.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .5;
+    z-index: -2;
+}
+
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+
+/* ===== Make expanding Image ==== */
