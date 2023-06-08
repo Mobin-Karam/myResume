@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useLocation } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const About = () => {
   const [country, setCountry] = useState([]);
@@ -14,9 +15,7 @@ const About = () => {
     const fetchData = async () => {
       try {
         // const res = await axios.get("https://api.github.com/users/Mobin-Karam");
-        const res = await axios.get(
-          "https://restcountries.com/v3.1/all"
-        );
+        const res = await axios.get("https://restcountries.com/v3.1/all");
         setCountry(res.data);
         console.log(res.data);
       } catch (err) {
@@ -61,6 +60,9 @@ const About = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Mobin Karam | About</title>
+      </Helmet>
       {/* <div className="about" id="about">
         <input
           className="w-500px h-50px p-10px text-white bg-slate-500 mb-10px"

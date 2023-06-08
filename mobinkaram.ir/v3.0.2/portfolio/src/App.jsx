@@ -8,7 +8,6 @@ import {
   Outlet,
 } from "react-router-dom";
 // it should use React Router Dom
-import "./dist/main.css";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
@@ -18,6 +17,7 @@ import Projects from "./pages/Projects";
 import Work from "./pages/Work";
 import About from "./pages/About";
 import Services from "./pages/Services";
+import "./dist/main.css";
 
 const Layout = () => {
   return (
@@ -53,7 +53,7 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path: "/login",
+    path: "/adminlogin",
     element: <Login />,
   },
   {
@@ -70,7 +70,7 @@ const App = () => {
   return (
     <div className="app">
       <div className="Container">
-        <RouterProvider router={router} />
+        <RouterProvider basename="/" router={router} />
       </div>
     </div>
   );

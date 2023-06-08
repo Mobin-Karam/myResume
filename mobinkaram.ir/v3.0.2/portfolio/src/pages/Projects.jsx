@@ -1,10 +1,14 @@
 import React from "react";
 import { projects } from "../components/Data";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const Projects = () => {
   return (
     <>
+      <Helmet>
+        <title>Mobin Karam | Projects</title>
+      </Helmet>
       <div className="workNav">
         <Link to={"/"}>
           <button className="Btn">Home</button>
