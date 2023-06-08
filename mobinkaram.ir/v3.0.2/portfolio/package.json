@@ -3,12 +3,12 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://mobinkaram.ir/portfolio/testp/",
+  "homepage": "https://mobinkaram.ir/portfolio/test/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
+    "preview": "vite preview --port 8080",
     "watch": "npx tailwindcss -i ./src/index.css -o ./src/dist/main.css --watch"
   },
   "dependencies": {
