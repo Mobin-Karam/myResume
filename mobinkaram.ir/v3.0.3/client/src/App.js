@@ -24,7 +24,7 @@ const Layout = () => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 5000);
   }, []);
 
   <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
@@ -42,7 +42,7 @@ const Layout = () => {
           </div>
         </div>
       ) : (
-        <div className="lg:flex  lg:items-center lg:justify-center lg:bg-slate-400 transition-all duration-600">
+        <div className="lg:flex  lg:items-center lg:justify-center lg:bg-slate-400 transition-all duration-500">
           <div className="lg:grid lg:grid-cols-5 flex flex-col-reverse w-full transition-all duration-600">
             <div className="lg:col-start-1  lg:col-end-2 ">
               <Header />
