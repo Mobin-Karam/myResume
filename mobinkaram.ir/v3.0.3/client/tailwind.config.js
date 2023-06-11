@@ -3,12 +3,19 @@ module.exports = {
   darkMode: ['class', '[data-mode="dark"]'],
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
+    "./public/**/*.html",
   ],
   theme: {
     fontFamily: {
       'popp': ['Poppins', 'sans-serif'],
     },
     extend: {
+      keyframes: {
+        wiggle: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: " rotate(360deg)" },
+        },
+      },
       spacing: {
         '0px': '0px',
         '2px': '2px',
