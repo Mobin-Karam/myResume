@@ -6,14 +6,14 @@ import {
 // it should use React Router Dom
 
 
-import Header from "./components/Leftside/Header/Header";
-import Home from "./components/Rightside/Content/Home/Home";
-import Aboutme from "./components/Rightside/Content/Aboutme/Aboutme";
-import WhatIDo from "./components/Rightside/Content/WhatIDo/WhatIDo";
-import Resume from "./components/Rightside/Content/Resume/Resume";
-import Portfolio from "./components/Rightside/Content/Portfolio/Portfolio";
-import Testimonial from "./components/Rightside/Content/Testimonial/Testimonial";
-import Contact from "./components/Rightside/Content/Contact/Contact";
+import Header from "./components/Header/Header";
+import Home from "./pages/Home/Home";
+import Aboutme from "./pages/Aboutme/Aboutme";
+import WhatIDo from "./pages/WhatIDo/WhatIDo";
+import Resume from "./pages/Resume/Resume";
+import Portfolio from "./pages/Portfolio/Portfolio";
+import Testimonial from "./pages/Testimonial/Testimonial";
+import Contact from "./pages/Contact/Contact";
 import { useEffect, useState } from "react";
 import "./dist/main.css";
 
