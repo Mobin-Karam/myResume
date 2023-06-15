@@ -1,7 +1,7 @@
 //Contact Component
 import {} from "react-icons/ai";
 import {} from "react-icons/bi";
-import { BsFillTelephoneFill } from "react-icons/bs";
+import {} from "react-icons/bs";
 import {} from "react-icons/cg";
 import {} from "react-icons/ci";
 import {} from "react-icons/di";
@@ -9,7 +9,7 @@ import { FaPhone } from "react-icons/fa";
 import {} from "react-icons/fc";
 import {} from "react-icons/gi";
 import {} from "react-icons/fi";
-import { GoBookmark } from "react-icons/go";
+import {} from "react-icons/go";
 import {} from "react-icons/gr";
 import { HiOutlineMail } from "react-icons/hi";
 import {} from "react-icons/hi2";
