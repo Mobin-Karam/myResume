@@ -1,0 +1,291 @@
+.App {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  flex-flow: column nowrap;
+  text-align: center;
+  background-color: rgb(145, 142, 142);
+  // HEADER
+  .header {
+    width: 100%;
+    height: 250px;
+    border-bottom: 2px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+
+    .bannerimg {
+      position: absolute;
+      width: 100%;
+      height: 250px;
+      background-color: rgb(0, 0, 0);
+      // background: url(../img/bg-img.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 0.5;
+    }
+
+    .text {
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-flow: column nowrap;
+      z-index: 1;
+    }
+  }
+  //CENTER
+  .center {
+    display: grid;
+    grid-template-columns: [col1]33.3%[col2]33.3%[col3]33.3%[colend];
+
+    .books {
+      grid-column-start: col1;
+      grid-column-end: colend;
+      display: grid;
+      grid-template-columns: [col1]33.3%[col2]33.3%[col3]33.3%[colend];
+      // grid-template-rows: [row1]300px[row2]33%[row3]33%[rowend];
+      margin: 20px;
+
+      .book {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: row nowrap;
+        gap: 10px;
+        align-items: center;
+        background-color: #fff;
+        margin: 10px;
+
+        a {
+          text-decoration: none;
+        }
+
+        img {
+          width: 200px;
+          height: 350px;
+          object-fit: cover;
+          background-color: rgb(176, 235, 215);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+
+        .bookitem1 {
+          position: relative;
+
+          button.delete {
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            padding: 10px;
+            font-size: 20px;
+            font-weight: 700;
+            border: none;
+            opacity: 0.5;
+            //text-align: center;
+            transition: all ease 0.5s;
+            -webkit-transition: all ease 0.5s;
+            -moz-transition: all ease 0.5s;
+            -ms-transition: all ease 0.5s;
+            -o-transition: all ease 0.5s;
+
+            &:hover {
+              opacity: 1;
+            }
+          }
+
+          button.update {
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            padding: 10px;
+            font-size: 20px;
+            font-weight: 700;
+            border: none;
+            opacity: 0.5;
+            //text-align: center;
+            transition: all ease 0.5s;
+            -webkit-transition: all ease 0.5s;
+            -moz-transition: all ease 0.5s;
+            -ms-transition: all ease 0.5s;
+            -o-transition: all ease 0.5s;
+
+            &:hover {
+              opacity: 1;
+            }
+          }
+
+          h2 {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+          }
+        }
+
+        .bookitem2 {
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          flex-flow: column nowrap;
+          width: 100%;
+          height: 100%;
+          // margin: 40px;
+          padding: 0px;
+        }
+
+        .delete {
+          border: border;
+          padding: 3px 6px;
+          background-color: white;
+          cursor: pointer;
+          border: 1px solid rgb(245, 191, 191);
+          color: rgb(254, 100, 100);
+        }
+
+        .update {
+          border: border;
+          padding: 3px 6px;
+          background-color: white;
+          cursor: pointer;
+          border: 1px solid rgb(204, 204, 243);
+          color: rgb(139, 139, 234);
+        }
+      }
+    }
+
+    // .aside {
+    //   width: 200px;
+    //   width: 100%;
+    //   border-right: 2px solid #676767;
+    //   display: inline-block;
+
+    //   .cards {
+    //     padding: 10px;
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+    //     flex-flow: column nowrap;
+
+    //     .card {
+    //       width: 100%;
+    //       height: 200px;
+    //       margin: 10px 20px;
+    //       background: #000;
+    //     }
+    //   }
+    // }
+  }
+  //BOTTOMFIXED
+  .bottomfixed {
+    width: 100%;
+    height: 55px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+
+    .link {
+      text-decoration: none;
+      color: #000;
+
+      &:hover .addbooks {
+        color: #fff;
+      }
+
+      .addbooks {
+        padding: 10px 150px;
+        border: none;
+        cursor: pointer;
+        margin: 5px 0px;
+        font-size: 20px;
+        transition: all ease 0.25s;
+        -webkit-transition: all ease 0.25s;
+        -moz-transition: all ease 0.25s;
+        -ms-transition: all ease 0.25s;
+        -o-transition: all ease 0.25s;
+        background-color: #802c2c;
+        color: #fff;
+        box-shadow: 0px 0px 10px 5px #ff4000;
+
+        &:hover {
+          background-color: gray;
+          box-shadow: 0px 0px 10px 5px #676767;
+        }
+      }
+    }
+  }
+  //FORM OF ADD & UPDATE
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // background: #000;
+    height: 100vh;
+    gap: 20px;
+
+    .inputform {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+
+      input {
+        direction: rtl;
+        padding: 20px;
+        height: 10px;
+        width: 400px;
+        margin-bottom: 10px;
+        outline: none;
+        font-size: 20px;
+
+        &::placeholder {
+          font-size: 20px;
+          font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+      }
+    }
+
+    .formButton {
+      border: none;
+      width: 270px;
+      padding: 10px;
+      background-color: rgb(244, 142, 74);
+      font-weight: bold;
+      color: white;
+      cursor: pointer;
+    }
+
+    .show {
+      position: absolute;
+      left: 100px;
+      top: 0px;
+      background-color: #0a902c;
+      color: #fff;
+      padding: 10px;
+      display: none;
+      transition: all ease 0.5s;
+      -webkit-transition: all ease 0.5s;
+      -moz-transition: all ease 0.5s;
+      -ms-transition: all ease 0.5s;
+      -o-transition: all ease 0.5s;
+      animation: cycle 2s linear 1 alternate;
+
+      @keyframes cycle {
+        0% {
+          left: -400px;
+          top: 0px;
+        }
+        100% {
+          left: 100px;
+          top: 0px;
+        }
+      }
+    }
+  }
+}
