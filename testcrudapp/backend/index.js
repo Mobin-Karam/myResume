@@ -2,31 +2,30 @@
 
 //...instrument
 import express from "express";
-import { Blog } from "./model/index.js";
+// import { Blog } from "./model/index.js";
+import routes from './routes/posts.js'
 
 
 
 const port = 8080;
 const app = express();
+const router = express.Router()
 
 app.use(express.json())
 
+app.use("/api", routes) // new
+
 
 // import data 
-const article = new Blog({
-    title: 'Awesome Post!',
-    slug: 'awesome-post',
-    published: true,
-    content: 'This is the best post ever',
-    tags: ['featured', 'announcement'],
-});
+// const article = new Blog({
+//     title: 'Awesome Post!',
+//     slug: 'awesome-post',
+//     published: true,
+//     content: 'This is the best post ever',
+//     tags: ['featured', 'announcement'],
+// });
 
-await article.save();
-
-
-// ... for find data in database
-// const firstArticle = await Blog.findOne({});
-// console.log(firstArticle);
+// await article.save();
 
 
 // App
@@ -34,13 +33,6 @@ app.get('/', (req, res) => {
     console.log(res.json("hello world"))
 })
 
-app.get("/post", (req, res) => {
-    const q = "SELECT * FROM books";
-    db.query(q, (err, data) => {
-        if (err) return res.json(err)
-        return res.json(data)
-    });
-});
 
 app.listen(port, () => {
     console.log('Connected to Backend!')
