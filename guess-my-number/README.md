@@ -6,3 +6,8 @@
 * For new game click on Again button on left top side of screen .
 
  
+## RoadMap for Making by your self and Practice :
+
+1. first for practice go make html and css file.
+2. make Javascript function and code its good idea for practice.
+3. for this project i used the javascript DOM and CSS DOM.
