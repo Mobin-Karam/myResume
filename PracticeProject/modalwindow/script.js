@@ -6,4 +6,9 @@ const btnOpenModal = document.querySelectorAll('.show-modal');
 
 console.log(btnOpenModal)
 
-for (let i = 0; i < btnOpenModal.length; i++) console.log(btnOpenModal[i])
+for (let i = 0; i < btnOpenModal.length; i++) {
+    btnOpenModal[i].addEventListener('click', function () {
+        // When the user clicks on <button>, open the modal
+        console.log('Button be clicked!')
+    })
+};
