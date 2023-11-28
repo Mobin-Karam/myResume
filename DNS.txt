@@ -1,6 +1,0 @@
-ns515.mihanwebhost.com
-ns516.mihanwebhost.com
-
-
-ns1.liara.zone
-ns2.liara.zone
