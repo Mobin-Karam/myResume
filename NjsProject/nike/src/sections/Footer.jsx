@@ -1,3 +1,4 @@
+import { copyrightSign } from "../assets/icons";
 import { footerLogo } from "../assets/images";
 import { footerLinks, socialMedia } from "../constants";
 
@@ -31,14 +32,19 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex flex-1 lg:gap-10 gap-20 flex-wrap ">
+        <div className="flex flex-1 lg:gap-10 gap-20 flex-wrap justify-between">
           {footerLinks.map((section) => (
             <div className="" key={section}>
-              <h4 className="text-white font-montserrat leading-normal font-medium mb-6 text-2xl">{section.title}</h4>
+              <h4 className="text-white font-montserrat leading-normal font-medium mb-6 text-2xl">
+                {section.title}
+              </h4>
 
               <ul className="">
                 {section.links.map((link) => (
-                  <li className="mt-3 text-white-400 text-base leading-normal hover:text-slate-gray cursor-pointer" key={link.name}>
+                  <li
+                    className="mt-3 text-white-400 text-base leading-normal hover:text-slate-gray cursor-pointer"
+                    key={link.name}
+                  >
                     <a href="" className="">
                       {link.name}
                     </a>
@@ -51,8 +57,18 @@ const Footer = () => {
       </div>
 
       <div className="flex justify-between text-white-400 mt-24 max-sm:flex-col max-sm:items-center ">
-
+        <div className="flex flex-1 justify-start items-center gap-2 font-montserrat cursor-pointer">
+          <img
+            src={copyrightSign}
+            alt="copy right sign"
+            width={20}
+            height={20}
+            className="rounded-full m-0"
+          />
+        </div>
+        <p className="">Copyright. All rights reserved.</p>
       </div>
+      <p className="font-montserrat cursor-pointer">Terms & Condidtions</p>
     </footer>
   );
 };
