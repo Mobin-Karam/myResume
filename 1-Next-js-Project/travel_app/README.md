@@ -5,7 +5,12 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## How start this project 
 
 - For install packege for this Project we use this Commend in Terminal :
-``` npx create-next-app@latest [YOUR-FOLDER-NAME] OR ./ [IN THIS CURRENT LOCATION] ```
+
+``` 
+    npx create-next-app@latest [YOUR-FOLDER-NAME] OR ./ [IN THIS CURRENT LOCATION] 
+    
+```
+- Use typescript , no ESLing , yes Tailwindcss , no src dir , yes App Router , no import alias  
 
 , run the development server:
 
