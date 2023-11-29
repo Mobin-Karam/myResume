@@ -10,6 +10,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 npx create-next-app@latest [YOUR-FOLDER-NAME] OR ./ [IN THIS CURRENT LOCATION] 
 
 ```
+
+### What used for this Project
 - Use typescript , no ESLing , yes Tailwindcss , no src dir , yes App Router , no import alias  
 
 , run the development server:
