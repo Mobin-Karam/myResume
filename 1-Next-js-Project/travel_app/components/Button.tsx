@@ -1,13 +1,13 @@
 import Image from "next/image";
 
-// This is used for TypeScript 
+// This is used for TypeScript
 type ButtonProps = {
   type: "button" | "submit";
   title: string;
   icon?: string;
-  variant: "btn_dark_green";
+  variant: string;
 };
-// The most important things is props in Button Components 
+// The most important things is props in Button Components
 const Button = ({ type, title, icon, variant }: ButtonProps) => {
   return (
     <button
