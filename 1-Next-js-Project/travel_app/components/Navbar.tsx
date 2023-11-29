@@ -8,6 +8,7 @@ import Button from "./Button";
 
 const Navbar = () => {
   return (
+    // Navbar
     <nav className="flexBetween max-container padding-container relative z-30 py-5">
       {/* // Logo image of the Website */}
       <Link href="/">
