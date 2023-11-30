@@ -46,3 +46,23 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## For Deployed the Project first go and fix next.config.js and write this :
+```
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+    output: 'export',
+    images: { unoptimized: true }
+}
+
+module.exports = nextConfig
+
+```
+
+-- after write this code in that file write this in Terminal :
+
+```
+npm run build
+```
+
+--- and in the End fix URL for addressing the files in index.html
