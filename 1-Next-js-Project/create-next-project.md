@@ -57,3 +57,4 @@ How does Nextjs optimize fonts?
 for using the fonts in Nextjs Projects create file in @/app/ui named Fonts.ts
 
 ##### Hint : Images without dimensions and web fonts are common causes of layout shift due to the browser having to download additional resources.
+
