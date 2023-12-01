@@ -58,3 +58,10 @@ for using the fonts in Nextjs Projects create file in @/app/ui named Fonts.ts
 
 ##### Hint : Images without dimensions and web fonts are common causes of layout shift due to the browser having to download additional resources.
 
+
+6. - What did i learn ? 
+   
+   - I learn this things 1. Css Styling 2. optimizing font and images 3. Creating Layouts and Pages
+
+====================================================================================================
+7. - 
