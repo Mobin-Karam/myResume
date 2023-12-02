@@ -64,4 +64,4 @@ for using the fonts in Nextjs Projects create file in @/app/ui named Fonts.ts
    - I learn this things 1. Css Styling 2. optimizing font and images 3. Creating Layouts and Pages
 
 ====================================================================================================
-7. - 
+7. - Navigating Between Pages
