@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .date {
+    @apply w-[200px] h-[100px] bg-blue-400 text-black;
+  }
+}
