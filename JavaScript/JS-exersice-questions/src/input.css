@@ -9,4 +9,7 @@
   .box {
     @apply p-2 m-3 rounded-lg bg-blue-200 text-black;
   }
+  .date {
+    @apply bg-green-300;
+  }
 }
