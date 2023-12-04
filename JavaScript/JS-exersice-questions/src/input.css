@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .Container {
+    @apply w-full h-screen flex justify-center items-center text-center flex-col bg-black;
+  }
+  .box {
+    @apply p-2 m-3 rounded-lg bg-blue-200 text-black;
+  }
+}
