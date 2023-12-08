@@ -58,10 +58,173 @@ for using the fonts in Nextjs Projects create file in @/app/ui named Fonts.ts
 
 ##### Hint : Images without dimensions and web fonts are common causes of layout shift due to the browser having to download additional resources.
 
+6. - What did i learn ?
 
-6. - What did i learn ? 
-   
    - I learn this things 1. Css Styling 2. optimizing font and images 3. Creating Layouts and Pages
 
-====================================================================================================
-7. - Navigating Between Pages
+==================================================================================================== 7. - Navigating Between Pages
+
+===============================
+
+8. - install Standard JavaScript for make code more readable and consistensly
+
+```
+ npm install eslint-config-standard
+```
+
+and run `npm run lint` before this commend should we write this in .eslintrc.json file :
+
+```
+
+
+```
+
+- to organize tailwindcss classes should we writed and arranged with hand but eslint plugin it by him self and easy our way to code better so install package ::
+
+```
+
+npm install eslint-plugin-tailwindcss
+
+```
+
+and add this to .eslintrc.json file :
+
+```
+{
+  "extends": ["next/core-web-vitals", "standard", "plugin:tailwindcss/recommended"]
+}
+
+```
+
+- now add eslint-plugin-prettier :
+
+```
+
+npm install eslint-plugin-prettier
+
+```
+
+- after that install ESLint VSCode extensions
+- and install prettier from terminal commend `npm install prettier`
+- and setting things up to vscode in `setting.json` file search name of setting.json vscode and write this code in there `> open use settings (JSON)` write this in search bar of top of vscode :::
+
+`i warn this is my setting file in vscode` you should add code belowe this code
+
+```
+{
+ {
+  // This is what i import in the setting.json file
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.addMissingImports": true
+  },
+  // end of it
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "files.autoSave": "afterDelay",
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "workbench.editor.splitInGroupLayout": "vertical",
+  "editor.minimap.showSlider": "always",
+  "editor.stickyScroll.enabled": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.fontFamily": "Fira Code , 'Courier New', monospace",
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[git-commit]": {
+    "breadcrumbs.showArrays": true,
+    "breadcrumbs.showFiles": true,
+    "editor.rulers": [72],
+    "workbench.editor.restoreViewState": false
+  },
+  "liveServer.settings.donotShowInfoMsg": true,
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "gulp.autoDetect": "on",
+  "editor.formatOnSave": true,
+  "git.enableSmartCommit": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "vscode-edge-devtools.webhint": false,
+  "workbench.editorAssociations": {
+    "*.pyc": "default",
+    "*.apk": "default"
+  },
+  "git.autofetch": true,
+  "git.allowForcePush": true,
+  "git.fetchOnPull": true,
+  "git.confirmSync": false,
+  "editor.cursorBlinking": "expand",
+  "githubPullRequests.createOnPublishBranch": "never",
+  "explorer.confirmDragAndDrop": false,
+  "workbench.colorTheme": "Theme",
+  "workbench.iconTheme": "material-icon-theme",
+  "vscodeGoogleTranslate.preferredLanguage": "Persian",
+  "jupyter.interactiveWindow.creationMode": "perFile",
+  "liveServer.settings.donotVerifyTags": true,
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "compressed",
+      "extensionName": ".min.css",
+      "savePath": "~/../css/"
+    }
+  ],
+  "git.ignoreRebaseWarning": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "explorer.compactFolders": false,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.fontSize": 16,
+  "terminal.integrated.fontFamily": "monospace",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "typescriptreact": true
+  },
+  "vsicons.dontShowNewVersionMessage": true,
+  "gitlens.advanced.messages": {
+    "suppressLineUncommittedWarning": true
+  },
+  "window.zoomLevel": -2
+}
+
+}
+```
+ - you should add this code to your setting.json file :::
+
+```
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.addMissingImports": true
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+}
+
+```
