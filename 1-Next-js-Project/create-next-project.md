@@ -66,7 +66,9 @@ for using the fonts in Nextjs Projects create file in @/app/ui named Fonts.ts
 
 ===============================
 
-8. - install Standard JavaScript for make code more readable and consistensly
+8. ## How Setup ESLint Prettier Setup.
+
+- install Standard JavaScript for make code more readable and consistensly
 
 ```
  npm install eslint-config-standard
@@ -105,7 +107,23 @@ npm install eslint-plugin-prettier
 ```
 
 - after that install ESLint VSCode extensions
-- and install prettier from terminal commend `npm install prettier`
+- and install prettier from terminal commend `npm install prettier` after intall it add this to your .eslintrc.json
+
+```
+{
+  "extends": [
+    "next/core-web-vitals",
+    "standard",
+    "plugin:tailwindcss/recommended",
+    "prettier"
+  ]
+}
+
+
+```
+
+- [Error] i get some and should do this in terminal `npm install --save-dev eslint-config-prettier` for this error message :`Failed to load config "prettier" to extend from.`
+
 - and setting things up to vscode in `setting.json` file search name of setting.json vscode and write this code in there `> open use settings (JSON)` write this in search bar of top of vscode :::
 
 `i warn this is my setting file in vscode` you should add code belowe this code
@@ -212,7 +230,8 @@ npm install eslint-plugin-prettier
 
 }
 ```
- - you should add this code to your setting.json file :::
+
+- you should add this code to your setting.json file :::
 
 ```
 {
@@ -228,3 +247,9 @@ npm install eslint-plugin-prettier
 }
 
 ```
+
+- ===============================
+
+- dont forgot to install prettier and Eslint
+
+- ? Tip of day `for reload window of vscode you can type`>reload window`and enter`
