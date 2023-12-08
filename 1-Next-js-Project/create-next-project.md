@@ -66,7 +66,7 @@ for using the fonts in Nextjs Projects create file in @/app/ui named Fonts.ts
 
 ===============================
 
-8. ## How Setup ESLint Prettier Setup.
+8. ## How Setup ESLint Prettier in VSCode.
 
 - install Standard JavaScript for make code more readable and consistensly
 
@@ -253,3 +253,8 @@ npm install eslint-plugin-prettier
 - dont forgot to install prettier and Eslint
 
 - ? Tip of day `for reload window of vscode you can type`>reload window`and enter`
+- ===========================================
+
+9. - ## How Git GitHub Setup
+
+
