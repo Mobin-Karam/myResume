@@ -4,12 +4,21 @@
 
 @layer components {
   .Container {
-    @apply w-full h-screen flex justify-center items-center text-center flex-col bg-black;
+    @apply w-full h-screen flex justify-center items-center text-center flex-col bg-slate-200;
   }
   .box {
     @apply p-2 m-3 rounded-lg bg-blue-200 text-black;
   }
   .date {
     @apply bg-green-300;
+  }
+  .btn {
+    @apply text-white px-12 py-2 rounded-full border-slate-400 border bg-slate-400 hover:bg-slate-700 hover:border hover:border-slate-200 transition-all duration-200;
+  }
+  .selectedList {
+    @apply cursor-pointer px-2 py-1 text-xl font-bold m-5;
+  }
+  .options {
+    @apply cursor-pointer;
   }
 }

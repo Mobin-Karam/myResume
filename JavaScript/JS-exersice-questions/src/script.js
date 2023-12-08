@@ -54,7 +54,6 @@ if (date < 10) {
 // insert date in div
 const dates = document.querySelector('.date').textContent = `${year}/${month}/${date} | ${months[month - 1]}`;
 
-
 // Get Time
 let hours = newDate.getHours();
 let minutes = newDate.getMinutes();
@@ -91,73 +90,20 @@ setInterval(() => {
 }, 1000);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-// // Fix Data & Time Show on Screen
-// const newDate = new Date();
-// const date = document.querySelector('.date');
-// const time = document.querySelector('.time');
-// const daysOfWeek = [
-//     "Saturday",
-//     "Sunday",
-//     "Monday",
-//     "Tuesday",
-//     "Wendsday",
-//     "Thursday",
-//     "Friday",
-// ]
-
-// date.textContent = ` ${newDate.getFullYear()}.${newDate.getMonth()}.${newDate.getDate()} `
-// time.textContent = ` ${newDate.getHours()}:${newDate.getMinutes()}:${newDate.getSeconds()} | ${daysOfWeek[newDate.getDay()]} `
-
-// // Make time refresh in every Seconds
-// let timer = () => {
-//     // Get newDate Every time
-//     const newDate = new Date();
-//     let hours = newDate.getHours()
-//     let minutes = newDate.getMinutes()
-//     let seconds = newDate.getSeconds()
-//     let daysOfWeeks = daysOfWeek[newDate.getDay()]
-//     // Set AM & PM
-//     let am_pm = hours >= 12 ? 'PM' : 'AM'
-//     // For Zero beside along Numbers
-//     if (seconds < 10) {
-//         seconds = `0${seconds}`
-//     }
-//     if (hours < 10){
-//         hours = `0${hours}`
-//     }
-//     if (minutes < 10){
-//         minutes = `0${minutes}`
-//     }
-//     // Set QuerySeletor
-//     let time = document.querySelector('.time');
-//     // Set time Layout
-//     time.textContent = ` ${hours}:${minutes}:${seconds} | ${am_pm} | ${daysOfWeeks} `
-//     // Show in Console.log()
-//     // console.log(time)
-//     // console.log(newDate)
-// }
-
-
-// setInterval(timer, 1000);
-
-// console.log(date)
-// console.log(daysOfWeek[newDate.getDay()])
-
-
 //^ #2 
 
+// Function for Print method
+function print_current_page() {
+    window.print()
+}
+
+// Action for Button
+const btn = document.querySelector('.btn')
+const clickHandler = () => {
+    btn.addEventListener('click', print_current_page())
+}
+
+// ===============================
 
 
+// ==============================
