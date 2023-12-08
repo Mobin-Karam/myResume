@@ -16,7 +16,7 @@
 
 //! The Answer 
 
-
+// Fix Data & Time Show on Screen
 const newDate = new Date();
 const date = document.querySelector('.date');
 const time = document.querySelector('.time');
@@ -41,67 +41,33 @@ let timer = () => {
     let minutes = newDate.getMinutes()
     let seconds = newDate.getSeconds()
     let daysOfWeeks = daysOfWeek[newDate.getDay()]
+    // Set AM & PM 
+    let am_pm = hours >= 12 ? 'PM' : 'AM'
+    // For Zero beside along Numbers
+    if (seconds < 10) {
+        seconds = `0${seconds}`
+    }
+    if (hours < 10){
+        hours = `0${hours}`
+    }
+    if (minutes < 10){
+        minutes = `0${minutes}`
+    }
     // Set QuerySeletor
     let time = document.querySelector('.time');
     // Set time Layout
-    time.textContent = ` ${hours}:${minutes}:${seconds} | ${daysOfWeeks} `
+    time.textContent = ` ${hours}:${minutes}:${seconds} | ${am_pm} | ${daysOfWeeks} `
     // Show in Console.log()
     // console.log(time)
     // console.log(newDate)
 }
 
 
-
 setInterval(timer, 1000);
-
-
-// let timerId = setTimeout(function tick() {
-//     const newDate = new Date()
-//     document.querySelector('.seconds').textContent = `${newDate.getSeconds}`
-//     timerId = setTimeout(tick, 1000); // (*)
-// }, 1000);
-
-// let timer = function () {
-// const time = document.querySelector('.time')
-//     return (
-//         time.textContent = ` ${newDate.getHours()}:${newDate.getMinutes()}:${newDate.getSeconds()} | ${dayOfWeek[newDate.getDay()]} `
-//     )
-// }
-
-// setInterval(() => {
-//     timer()
-// }, 1000);
 
 console.log(date)
 console.log(daysOfWeek[newDate.getDay()])
 
-
-
-
-// setTimeout(function () { window.location.reload(); }, 1000);
-// let timerId = setInterval(() => window.location.reload(), 1000);
-
-// function sayHi() {
-//     alert('Hi Mobin')
-// }
-
-// setTimeout(sayHi,3000)
-
-// function sayHi(pharse, who) {
-//     return alert(pharse + ', ' + who)
-// }
-
-// let timerId = setTimeout((pharse, who) => { alert(pharse + ', ' + who) }, 2000, 'Hello', 'Mobin')
-
-// clearTimeout(timerId);
-
-// alert(timerId + ' Done!')
-
-
-// let timerId = setTimeout(function tick() {
-//     alert('tick');
-//     timerId = setTimeout(tick, 2000); // (*)
-// }, 2000);
 
 //^ #2 
 
