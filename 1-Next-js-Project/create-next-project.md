@@ -257,4 +257,8 @@ npm install eslint-plugin-prettier
 
 9. - ## How Git GitHub Setup
 
+- =================================
 
+10. - ## TailwindCSS Setup :::
+
+- going to tailwindcss.config.ts file
