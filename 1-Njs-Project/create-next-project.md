@@ -262,3 +262,6 @@ npm install eslint-plugin-prettier
 10. - ## TailwindCSS Setup :::
 
 - going to tailwindcss.config.ts file
+
+- the used packages should install
+`npm install @tailwindcss/typography tailwindcss-animate`
