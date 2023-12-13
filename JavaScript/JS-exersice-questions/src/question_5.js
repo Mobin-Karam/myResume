@@ -13,8 +13,9 @@ const authAge = 18;
 const getBirthYear = document.getElementById('getBirthYear')
 const age = currentYear - getBirthYear;
 
-// Place that and text complete is be Shown.
+// ---- Place that and text complete is be Shown.
 const text = document.getElementById('Text');
+
 // Get and Store FirstName & LastName
 const firstName = document.getElementById('firstName');
 const lastName = document.getElementById('lastName');
@@ -32,14 +33,42 @@ const btnCheckHandler = () => {
     const checkedLastName = document.getElementById('checkedLastName')
     const checkedGetBirthYear = document.getElementById('checkedGetBirthYear')
 
-    // The Condition scripts
+    const age = currentYear - getBirthYearInputValue;
+
+    // - The Condition scripts
+
+    // if for FirstName if empty or not
     if (firstNameInputValue !== "") {
-        if (firstNameInputValue.length >= 3, firstNameInputValue.length <= 20) {
-            checkedFirstName.textContent = 'FirstName be Checked ✅';
-            if (lastNameInputValue.length >= 3, lastNameInputValue.length <= 20) {
-                checkedLastName.textContent = 'LastName be Checked ✅';
+
+        // if for FirstName is above 3 to 20
+        if (firstNameInputValue.length >= 3 && firstNameInputValue.length <= 20) {
+
+            checkedFirstName.textContent = '';
+
+            // if for lastName if above 3 to 20
+            if (lastNameInputValue.length >= 3 && lastNameInputValue.length <= 20) {
+
+                checkedLastName.textContent = '';
+
+                // if for getBirthYear is above 1950
+                if (getBirthYearInputValue >= 1950 && getBirthYearInputValue <= currentYear) {
+
+                    // if Age equal or above AuthAge for Driver's license.
+                    if (age >= authAge) {
+                        text.textContent = `Your Name Is ${firstNameInputValue} ${lastNameInputValue}. You Were Born In ${getBirthYearInputValue} and your age is ${age},
+                        and you are allowed to take driver's license ✅`;
+
+                        // checked Get BirthYear be empty
+                        checkedGetBirthYear.textContent = '';
+                    } else {
+                        text.textContent = `Your are not Allowed 🛑`
+                    }
+                } else {
+                    checkedGetBirthYear.textContent = `Please Insert Correct BirthYear should be between ${currentYear} and 1950 .`;
+                }
             } else {
-                checkedLastName.textContent = 'Please Insert LastName.';
+                checkedLastName.textContent = 'Please Insert LastName .';
+                checkedGetBirthYear.textContent = 'Please Insert BirthYear .';
             }
         } else {
             alert("First Name must be between or equal to 3 to 20 characters");
@@ -63,26 +92,3 @@ const btnResetHandler = () => {
     const getBirthYearInputValue = getBirthYear.value = "";
 
 };
-
-// const firstName = prompt('What is your First Name ?')
-// const lastName = prompt('What is your Last Name ?')
-// const getBirthYear = Number(prompt('When you born ?'));
-//============================================= # 1-2 #######
-// const checkNameLength = (firstName.length >= 3, firstName.length <= 20, lastName.length <= 20, lastName.length >= 3)
-
-
-
-
-///============================================== # 1-1 #######
-// if (checkNameLength) {
-//         alert('FirstName & LastName be Checked ✅')
-//         if (age >= authAge) {
-//             text.innerHTML += `Hello Mr./Mrs ${firstName} ${lastName}. You are ${age} Years Old Today and you can take driver's license ✅`;
-//         } else {
-//             text.textContent = `Your age is ${age} and Your Full name is ${firstName} ${lastName} and you can't take driver's license 🛑`;
-//         }
-//     } else {
-//         alert('FirstName & LastName be Checked Please Enter your Name Above or Equal to 3 Characters 🛑')
-//     }
-
-//==========================================
