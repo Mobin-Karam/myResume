@@ -3,21 +3,65 @@
 //^ #5 
 
 // Get New Date
-let getSina = new Date();
-
-// Place that end text complete is be Shown.
-const text = document.getElementById('Text')
+let getNewDate = new Date();
+let currentYear = getNewDate.getFullYear();
 
 // AuthAge
 const authAge = 18;
 
-// FirstName
-const firstName = document.getElementById('inputText')
-console.log(firstName.value)
+// Get Age and BirthYear 
+const getBirthYear = document.getElementById('getBirthYear')
+const age = currentYear - getBirthYear;
 
-const checkedButton = () => {
-    const fnInputValue = firstName.value
-    console.log(fnInputValue)
+// Place that and text complete is be Shown.
+const text = document.getElementById('Text');
+// Get and Store FirstName & LastName
+const firstName = document.getElementById('firstName');
+const lastName = document.getElementById('lastName');
+
+
+// Button Check Fuction
+const btnCheckHandler = () => {
+    // Input Value
+    const firstNameInputValue = firstName.value;
+    const lastNameInputValue = lastName.value;
+    const getBirthYearInputValue = getBirthYear.value;
+
+    // Checked Span Text
+    const checkedFirstName = document.getElementById('checkedFirstName')
+    const checkedLastName = document.getElementById('checkedLastName')
+    const checkedGetBirthYear = document.getElementById('checkedGetBirthYear')
+
+    // The Condition scripts
+    if (firstNameInputValue !== "") {
+        if (firstNameInputValue.length >= 3, firstNameInputValue.length <= 20) {
+            checkedFirstName.textContent = 'FirstName be Checked ✅';
+            if (lastNameInputValue.length >= 3, lastNameInputValue.length <= 20) {
+                checkedLastName.textContent = 'LastName be Checked ✅';
+            } else {
+                checkedLastName.textContent = 'Please Insert LastName.';
+            }
+        } else {
+            alert("First Name must be between or equal to 3 to 20 characters");
+        }
+    } else if (firstNameInputValue === "") {
+        checkedFirstName.textContent = 'Please Insert FirstName .';
+        checkedLastName.textContent = 'Please Insert LastName .';
+        checkedGetBirthYear.textContent = 'Please Insert BirthYear .';
+    };
+
+    // Console scripts
+    console.log(firstNameInputValue)
+    console.log(lastNameInputValue)
+    console.log(getBirthYearInputValue)
+};
+
+// Button Reset Fuction
+const btnResetHandler = () => {
+    const firstNameInputValue = firstName.value = "";
+    const lastNameInputValue = lastName.value = "";
+    const getBirthYearInputValue = getBirthYear.value = "";
+
 };
 
 // const firstName = prompt('What is your First Name ?')
@@ -26,20 +70,9 @@ const checkedButton = () => {
 //============================================= # 1-2 #######
 // const checkNameLength = (firstName.length >= 3, firstName.length <= 20, lastName.length <= 20, lastName.length >= 3)
 
-// let currentYear = getSina.getFullYear();
 
-// let age = currentYear - getBirthYear;
 
-// if (firstName !== "") {
-//     if (firstName.length >= 3, firstName.length <= 20) {
-//         console.log('FirstName be Checked ✅')
-//         if (lastName.length >= 3, lastName.length <= 20) {
-//             console.log('LastName be Checked ✅')
-//         }
-//     }
-// } else if (firstName == "") {
-//     alert('Hello \nPlease insert Your FirstName in input \n      Thanks you. 🎉')
-// }
+
 ///============================================== # 1-1 #######
 // if (checkNameLength) {
 //         alert('FirstName & LastName be Checked ✅')
