@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- For JavaScript files works fix the script src in the bottom of the file html -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <!-- TailwindCSS Link -->
+    <link rel="stylesheet" href="./dist/output.css">
+</head>
+
+<body>
+    <div class="Container">
+        <!-- ======================= -->
+        <!-- ====== Challenge : Can Take Driver's License ======= -->
+        <!-- ======================= -->
+        <div class="w-full flex items-center justify-center flex-col">
+            <!-- Orginall Text  -->
+            <p id="Text" class="w-full text-xl"></p>
+            <!-- Inputs  -->
+            <div class="w-full flex items-center justify-center flex-col">
+                <!-- FirstName Input  -->
+                <input id="firstName" class="p-1 m-2" type="text" placeholder="FirstName">
+                <p id="checkedFirstName" class="text-red-600"></p>
+                <!-- LastName Input  -->
+                <input id="lastName" class="p-1 m-2" type="text" placeholder="LastName">
+                <p id="checkedLastName" class="text-red-600"></p>
+                <!-- GetBirthYear Input  -->
+                <input id="getBirthYear" class="p-1 m-2" type="number" placeholder="BirthYear">
+                <p id="checkedGetBirthYear" class="text-red-600"></p>
+            </div>
+            <!-- Buttons  -->
+            <div class="flex items-center justify-center flex-row">
+                <!-- Check Button  -->
+                <button id="btn" onclick="btnCheckHandler()"
+                    class="px-3 py-1 mx-4 bg-blue-300 text-white hover:bg-blue-400 transition-all">Check</button>
+                <!-- Reset Button  -->
+                <button id="btn" onclick="btnResetHandler()"
+                    class="px-3 py-1 mx-4 bg-blue-300 text-white hover:bg-blue-400 transition-all">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Challenge : Can Take Driver's License Scripts -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
