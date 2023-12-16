@@ -2,6 +2,7 @@
 
 //^ #5 
 
+<<<<<<< Updated upstream
 let getSina = new Date();
 
 const text = document.getElementById('Text')
@@ -47,3 +48,5 @@ if (firstName !== "") {
 
 //     text.textContent = `Your age is ${age} and Your Full name is ${firstName} ${lastName} and you can't take driver's license 🛑`;
 // } 
+=======
+>>>>>>> Stashed changes
