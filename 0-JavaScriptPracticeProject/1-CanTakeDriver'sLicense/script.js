@@ -94,11 +94,9 @@ const btnResetHandler = () => {
 
 };
 
-
-
+// window event.key for Enter event
 window.addEventListener('keydown', function (event) {
     if (event.code == 'Enter') {
         return btnCheckHandler();
-        // return alert('Hello')
     }
 });
