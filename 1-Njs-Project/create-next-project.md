@@ -8,6 +8,7 @@ npx create-next-app@latest [YOUR_FOLDER_LOCATION] or ./ [THAT_FOLDER]
 
 2. - change direction in terminal to your file with :
 
+
 ```
 cd [YOUR_FOLDER_NAME]
 ```
